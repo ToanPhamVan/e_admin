@@ -1,0 +1,60 @@
+<!-- app/book-list/book-list.component.html -->
+<app-frameimport></app-frameimport>
+
+<!-- Side Nav -->
+<div class="search_bar">
+    <form class="navbar-form" method="post" name="form1">
+        <div>
+            <input class="form-control" type="text" name="search" placeholder="search product..." required>
+            <button style="background-color: #20B8F3;" type="submit" name="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </div>
+    </form>
+    <div class="add_button">
+        <a routerLink="add"><button type="button" class="btn btn-success">Add</button></a>
+        <router-outlet></router-outlet>
+
+    </div>
+
+</div>
+
+
+
+<div style="overflow: scroll; height: 600px; width: 100%;">
+    <table class="table table-bordered table-hover">
+        <tr style="background-color: #20B8F3;">
+            <th>ID </th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Image</th>
+            <th>Category</th>
+            <th>Images</th>
+            <!-- <th style="max-width:100px">Online Reading</th> -->
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td><img class="img-rounded" style="width: 100px;height:100px;" src="" alt="">
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <!-- <td>hi</td> -->
+            <td><a href=""><button type="button" class="btn btn-warning">Edit</button></a>
+            </td>
+            <td><a href=""><button type="button" class="btn btn-danger">Delete</button></a>
+            </td>
+        </tr>
+    </table>
+</div>

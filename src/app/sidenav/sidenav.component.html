@@ -1,0 +1,41 @@
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">CodingLab</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a routerLink="/dashboard">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a routerLink="/products">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a routerLink="/statistics">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Statistics</span>
+                </a>
+                <span class="tooltip">Statistics</span>
+            </li>
+        </ul>
+    </div>
+</body>
+<section class="home-section">
+    <router-outlet></router-outlet>
+
+</section>
